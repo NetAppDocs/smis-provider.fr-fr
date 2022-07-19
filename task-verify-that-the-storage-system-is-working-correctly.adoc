@@ -1,0 +1,86 @@
+---
+permalink: task-verify-that-the-storage-system-is-working-correctly.html 
+sidebar: sidebar 
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly 
+summary: Pour que SMI-S Provider puisse être configuré, vous devez ajouter au moins un système de stockage au référentiel CIMOM, puis vérifier que le système de stockage fonctionne correctement. 
+---
+= Vérifiez que le système de stockage fonctionne correctement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour que SMI-S Provider puisse être configuré, vous devez ajouter au moins un système de stockage au référentiel CIMOM, puis vérifier que le système de stockage fonctionne correctement.
+
+.Avant de commencer
+* Vous devez déjà vous connecter en tant qu'administrateur.
+* Vous devez avoir déjà accédé à SMI-S Provider.
+
+
+.Étapes
+. Ajoutez au moins un système de stockage au référentiel CIMOM :
++
+[cols="2*"]
+|===
+| Pour ajouter un système de stockage avec un... | Entrez cette commande... 
+
+
+ a| 
+Connexion HTTP entre le fournisseur et le système de stockage
+ a| 
+`*smis add _storage_sys storage_sys_user_*`
+
+
+
+ a| 
+Connexion HTTPS entre le fournisseur et le système de stockage
+ a| 
+`*smis addsecure _storage_sys storage_sys_user_*`
+
+|===
++
+La commande attend jusqu'à 15 minutes que le fournisseur mette à jour le cache et réponde.
+
+. Vérifiez le résultat des commandes suivantes :
++
+[cols="2*"]
+|===
+| Pour cette commande... | Vérifiez que... 
+
+
+ a| 
+`smis list`
+ a| 
+Le nombre d'éléments correspond au nombre de systèmes de stockage gérés.
+
+
+
+ a| 
+`smis disks`
+ a| 
+Le nombre de disques correspond au nombre total de disques sur tous les systèmes de stockage.
+
+
+
+ a| 
+`smis luns`
+ a| 
+Le nombre de LUN correspond au nombre total de LUN sur tous les systèmes de stockage.
+
+
+
+ a| 
+`smis pools`
+ a| 
+Le nombre d'ONTAP_ConcretePools correspond au nombre total d'agrégats sur tous les systèmes de stockage.
+
+
+
+ a| 
+`smis volumes`
+ a| 
+Le nombre de volumes correspond au nombre total de volumes sur tous les systèmes de stockage.
+
+|===
+

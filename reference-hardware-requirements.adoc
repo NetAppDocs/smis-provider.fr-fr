@@ -1,0 +1,50 @@
+---
+permalink: reference-hardware-requirements.html 
+sidebar: sidebar 
+keywords: smi-s provider, smi-s agent 
+summary: 'Avant d"installer NetApp SMI-S Provider, vérifiez que l"hôte Windows respecte la configuration matérielle minimale requise.' 
+---
+= Configuration matérielle requise
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Avant d'installer NetApp SMI-S Provider, vérifiez que l'hôte Windows respecte la configuration matérielle minimale requise.
+
+[cols="2*"]
+|===
+| Sous-jacent | De formation 
+
+
+ a| 
+Mémoire
+ a| 
+* 4 Go de RAM (minimum)
+* 8 Go de RAM (recommandé)
+
+
+
+
+ a| 
+D'espace disque supplémentaire
+ a| 
+* 1 Go (minimum)
+* 4 Go (recommandé)
+
+
+L'activation de la journalisation et du suivi nécessite un espace disque supplémentaire pouvant atteindre 1 Go, en fonction des paramètres de rotation des fichiers journaux et de suivi.
+
+Vous devez disposer de 100 Mo d'espace disque temporaire pour l'installation.
+
+
+
+ a| 
+CPU
+ a| 
+* Double cœur 2.0 GHz (minimum)
+* Quad-Core 2.0 GHz (recommandé)
+
+
+|===

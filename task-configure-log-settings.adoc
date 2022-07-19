@@ -1,0 +1,53 @@
+---
+permalink: task-configure-log-settings.html 
+sidebar: sidebar 
+keywords: system message, directory, netapp si-s provider, cim server log 
+summary: 'Par défaut, tous les messages système sont enregistrés. De plus, par défaut, les journaux des messages système se trouvent dans le répertoire des journaux du répertoire dans lequel NetApp SMI-S Provider est installé. Vous pouvez modifier l"emplacement et le niveau des messages système écrits dans le journal du serveur CIM. Par exemple, vous pouvez choisir de stocker les journaux dans un répertoire que vous spécifiez et de n"avoir que des messages système mortels écrits dans le journal du serveur CIM.' 
+---
+= Configurer les paramètres du journal
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Par défaut, tous les messages système sont enregistrés. De plus, par défaut, les journaux de messages système se trouvent dans le `logs` Dans le répertoire dans lequel NetApp SMI-S Provider est installé. Vous pouvez modifier l'emplacement et le niveau des messages système écrits dans le journal du serveur CIM. Par exemple, vous pouvez choisir de stocker les journaux dans un répertoire que vous spécifiez et de n'avoir que des messages système mortels écrits dans le journal du serveur CIM.
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+.Étapes
+. Accédez au fournisseur NetApp SMI-S.
+. Effectuez l'une des opérations suivantes :
++
+[cols="3*"]
+|===
+| Action | Commande | Informations supplémentaires 
+
+
+ a| 
+Modifiez le niveau d'enregistrement des messages système
+ a| 
+`*cimconfig -s logLevel=_new_log_level_ -p*`
+ a| 
+Si vous souhaitez changer le niveau de journalisation à « « INFORMATION », par exemple, vous devez saisir la commande suivante : + `*cimconfig -s logLevel=INFORMATION -p*`
+
+
+
+ a| 
+Modifier le répertoire du journal des messages système
+ a| 
+`*cimconfig -s logdir=new_log_directory -p*` Si le `_new_log_directory_` contient de l'espace, vous devez l'inclure entre guillemets (`"_new log directory_"`).
+ a| 
+Si vous souhaitez changer le répertoire de journalisation en "cerveblogs", par exemple, vous devez entrer la commande suivante :
+
+`*cimconfig -s logdir=serverlogs -p*`
+
+|===
+. Redémarrez le serveur CIM :
++
+`*smis cimserver restart*`
+
+

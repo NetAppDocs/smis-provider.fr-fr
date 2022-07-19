@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-tracing.html 
+sidebar: sidebar 
+keywords: configure, smi-s provider, trace, files, components, trace, write, trace, file location 
+summary: 'Vous pouvez configurer la façon dont SMI-S Provider gère les fichiers de trace, tels que la spécification des composants à suivre, la cible à laquelle les messages de trace sont écrits, le niveau de traçage et l"emplacement du fichier de trace.' 
+---
+= Gérer le tracé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez configurer la façon dont SMI-S Provider gère les fichiers de trace, tels que la spécification des composants à suivre, la cible à laquelle les messages de trace sont écrits, le niveau de traçage et l'emplacement du fichier de trace.

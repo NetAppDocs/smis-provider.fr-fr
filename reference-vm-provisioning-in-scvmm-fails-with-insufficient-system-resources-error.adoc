@@ -1,0 +1,34 @@
+---
+permalink: reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider. 
+---
+= Les ressources système sont insuffisantes pour terminer le service demandé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Message*
++
+`Insufficient system resources exist to complete the requested service`
+
+* *Description*
++
+Ce message survient lorsque la limite maximale des sessions utilisateur du même utilisateur par connexion a été atteinte lors du provisionnement d'un grand nombre de machines virtuelles sur un seul partage de fichiers dans SCVMM.
+
++
+SCVMM crée une connexion TCP par hôte Hyper-V, et chaque connexion crée de nombreuses sessions avec deux utilisateurs : le nom de l'ordinateur (COMPUTER$) de l'hôte Hyper-V et le « Run as account » de SCVMM. Le nombre de sessions avec COMPUTER$ correspond exactement à un plus grand nombre de disques durs virtuels déployés sur cet hôte Hyper-V.
+
++
+La valeur par défaut de `Max Same User Session Per Connection` est 50. Cela limite le déploiement d'ordinateurs virtuels à grande échelle avec SCVMM. Si vous déployez plus de 50 machines virtuelles par hôte Hyper-V, ce problème se pose.
+
+* * Action corrective*
++
+Augmentez le compteur qui contrôle le nombre maximal de sessions sur la même connexion pour le protocole CIFS. Par exemple, la commande suivante modifie le nombre maximal de sessions utilisateur sur la même connexion, de 50 à 100 par défaut :
+
++
+`*SVM::***> cifs op modify -max-same-user-sessions-per-connection 100*`
+
+

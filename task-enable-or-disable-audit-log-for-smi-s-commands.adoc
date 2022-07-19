@@ -1,0 +1,55 @@
+---
+permalink: task-enable-or-disable-audit-log-for-smi-s-commands.html 
+sidebar: sidebar 
+keywords: incoming smi-s command, record, log files, auditor, wbem client 
+summary: 'Toutes les commandes SMI-S entrantes sont enregistrées dans des fichiers journaux d"audit, ce qui permet aux auditeurs de suivre les activités des opérations du client WBEM et de l"utilisation du fournisseur. Vous pouvez activer ou désactiver la journalisation de ces commandes entrantes en définissant une propriété de configuration dynamique.' 
+---
+= Active ou désactive le journal d'audit des commandes SMI-S.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Toutes les commandes SMI-S entrantes sont enregistrées dans des fichiers journaux d'audit, ce qui permet aux auditeurs de suivre les activités des opérations du client WBEM et de l'utilisation du fournisseur. Vous pouvez activer ou désactiver la journalisation de ces commandes entrantes en définissant une propriété de configuration dynamique.
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+Les données du journal d'audit peuvent fournir un enregistrement des modifications d'accès, d'activité et de configuration d'un serveur CIM. Le contenu du fichier d'audit comprend la commande émise, le nom de la commande émise et l'heure à laquelle la commande a été émise.
+
+Propriété de configuration dynamique `enableAuditLog` active ou désactive la journalisation des audits au moment de l'exécution. Par défaut, enableAuditLog est défini sur true.
+
+La pratique courante consiste à laisser la journalisation des audits activée.
+
+Le fichier journal d'audit (`cimserver_auditlog`) est stocké dans le répertoire du journal pegasus (`C:\Program Files (x86)\Netapp\smis\pegasus\logs`).
+
+La taille maximale du fichier journal d'audit est de 10 Mo. Une fois la limite maximale atteinte, le fichier est renommé `cimserver_auditlog.0`, et un nouveau `cimserver auditlog` un fichier est créé pour collecter les informations de journalisation des audits les plus récentes.
+
+Le fournisseur SMI-S de NetApp gère les six fichiers journaux d'audit les plus récents : `cimserver_auditlog.0` à `cimserver_auditlog.5`.
+
+.Étapes
+. Accédez au fournisseur NetApp SMI-S.
+. Définir la journalisation d'audit des commandes SMI-S au moment de l'exécution :
++
+[cols="2*"]
+|===
+| Action | Commande 
+
+
+ a| 
+*Activer la journalisation d'audit SMI-S*
+ a| 
+`*cimconfig -s enableAuditLog=true*`
+
+
+
+ a| 
+*Désactiver la journalisation d'audit SMI-S*
+ a| 
+`*cimconfig -s enableAuditLog=false*`
+
+|===
+

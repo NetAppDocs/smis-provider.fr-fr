@@ -1,0 +1,39 @@
+---
+permalink: reference-smis-exports.html 
+sidebar: sidebar 
+keywords: smis exports, command display, network attached storage 
+summary: 'La commande smis Exports affiche les exportations NAS (Network Attached Storage) pour les systèmes de stockage.' 
+---
+= exportations smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis exports` La commande affiche les exportations NAS (Network Attached Storage) des systèmes de stockage.
+
+exportations smis
+`[-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Utilisateur avec un nom d'utilisateur et un mot de passe valides
+
+.Paramètres
+* `*[-t {http | https}]*`
++
+Protocole à utiliser : HTTPS (par défaut) ou HTTP
+
+
+
+Le `smis exports` la commande et sa sortie :
+
+[listing]
+----
+smis exports
+ONTAP_LogicalFile.CreationClassName="ONTAP_LogicalFile",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="/vol/NAS_vol/TestCFS0528",Name="/vol/NAS_vol/TestCFS0528"
+ONTAP_Qtree.CreationClassName="ONTAP_Qtree",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="nilesh_vserver_rootvol",Id="nilesh_vserver_rootvol:0",Name=""
+ONTAP_Qtree.CreationClassName="ONTAP_Qtree",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="NAS_vol",Id="NAS_vol:0",Name=""
+ONTAP_Qtree.CreationClassName="ONTAP_Qtree",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="NAS_vol",Id="NAS_vol:1",Name=""
+----

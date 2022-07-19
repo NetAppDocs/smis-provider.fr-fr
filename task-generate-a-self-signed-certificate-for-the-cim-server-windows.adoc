@@ -1,0 +1,45 @@
+---
+permalink: task-generate-a-self-signed-certificate-for-the-cim-server-windows.html 
+sidebar: sidebar 
+keywords: ssl authentication, enable, cim server, installation, self-signed certificate 
+summary: 'Par défaut, l"authentification SSL est activée pour le serveur CIM. Lors de l"installation du SMI-S Provider, un certificat auto-signé pour le serveur CIM est installé dans le répertoire pegasus. Vous pouvez générer votre propre certificat auto-signé et l"utiliser plutôt que le certificat par défaut.' 
+---
+= Générez un certificat auto-signé pour le serveur CIM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Par défaut, l'authentification SSL est activée pour le serveur CIM. Lors de l'installation du SMI-S Provider, un certificat auto-signé pour le serveur CIM est installé dans le `pegasus` répertoire. Vous pouvez générer votre propre certificat auto-signé et l'utiliser plutôt que le certificat par défaut.
+
+.Avant de commencer
+* Vous devez déjà vous connecter en tant qu'administrateur.
+* Vous devez avoir déjà accédé à SMI-S Provider.
+
+
+.Étapes
+. Générer une clé privée :
++
+`*openssl genrsa -out cimom.key 2048*`
+
+. Générer une demande de certificat :
++
+`*openssl req -new -key cimom.key -out cimom.csr*`
+
+. Entrez vos informations pour la demande de certificat lorsque vous y êtes invité.
+. Générer le certificat auto-signé :
++
+`*openssl x509 -in cimom.csr -out cimom.cert -req -signkey cimom.key -days 1095*`
+
++
+Vous pouvez indiquer un nombre de jours différent pour lequel le certificat est valide.
+
+. Copiez le `cimom.key` et `cimom.cert` fichiers vers le `pegasus` Répertoire (Windows : `C:\Program Files (x86)\NetApp\smis\pegasus`).
+
+
+
+
+== Résultat
+
+La plage de dates du certificat commence à la date actuelle et s'exécute pendant le nombre de jours spécifié.

@@ -1,0 +1,41 @@
+---
+permalink: reference-smis-licensed.html 
+sidebar: sidebar 
+keywords: smis licensed, command, lists, licensed, storage systems 
+summary: La commande smis sous licence répertorie les fonctions sous licence des systèmes de stockage. 
+---
+= licence smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis licensed` la commande répertorie les fonctions sous licence des systèmes de stockage.
+
+licence smis
+
+`[-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Utilisateur avec un nom d'utilisateur et un mot de passe valides
+
+.Paramètres
+* `*[-t {http | https}]*`
++
+Protocole à utiliser : HTTPS (par défaut) ou HTTP
+
+
+
+Le `smis licensed` commande et sa sortie abrégée :
+
+[listing]
+----
+smis licensed
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:cifs"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:cluster"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:fcp"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:iscsi"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:nfs"
+----

@@ -1,0 +1,14 @@
+---
+permalink: concept-specify-slp-configuration-options.html 
+sidebar: sidebar 
+keywords: editing, slp.conf, configuration, file, manage, service location protocol daemon, service 
+summary: 'Vous pouvez modifier le fichier de configuration slp.conf pour gérer le service SLAPD (service Location Protocol daemon).' 
+---
+= Spécifiez les options de configuration SLP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez modifier le `slp.conf` Fichier de configuration pour gérer le service SLAPD (service Location Protocol daemon).

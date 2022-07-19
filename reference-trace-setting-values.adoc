@@ -1,0 +1,92 @@
+---
+permalink: reference-trace-setting-values.html 
+sidebar: sidebar 
+keywords: specify, comments, trace, target, change, location 
+summary: 'Vous pouvez spécifier les composants à tracer, la cible de trace et le niveau de traçage. Vous pouvez également modifier le nom et l"emplacement du fichier de trace si vous ne souhaitez pas utiliser le nom et l"emplacement du fichier de trace par défaut.' 
+---
+= Valeurs des paramètres de trace
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez spécifier les composants à tracer, la cible de trace et le niveau de traçage. Vous pouvez également modifier le nom et l'emplacement du fichier de trace si vous ne souhaitez pas utiliser le nom et l'emplacement du fichier de trace par défaut.
+
+Vous pouvez configurer les paramètres de trace suivants :
+
+* *TraceComponents*
++
+Spécifie les composants à suivre. Par défaut, tous les composants sont tracés.
+
+* *TraceFacility*
++
+Spécifie la cible à laquelle les messages de suivi sont écrits :
+
++
+** Fichier
++
+Il s'agit de la valeur par défaut, qui spécifie que les messages de trace sont écrits dans le fichier spécifié par l'option de configuration traceFilePath.
+
+** Journal
++
+Spécifie que les messages de trace sont écrits dans le fichier journal cimserver_standard.
+
+
+
+* *TraceFilePath*
++
+Indique l'emplacement du fichier de trace. Par défaut, le fichier trace est nommé `cimserver.trc` et est situé dans le `traces` répertoire.
+
+* *Niveau de trace*
++
+Spécifie le niveau de traçage. Par défaut, le traçage est désactivé.
+
++
+[cols="2*"]
+|===
+| Niveau de trace | Messages de suivi écrits 
+
+
+ a| 
+0
+ a| 
+Le traçage est désactivé.
+
+
+
+ a| 
+1
+ a| 
+Messages graves et consignés.
+
+
+
+ a| 
+2
+ a| 
+Messages de suivi de flux de base (détails de données faibles)
+
+
+
+ a| 
+3
+ a| 
+Flux logique inter-fonction (détail de données moyennes)
+
+
+
+ a| 
+4
+ a| 
+Détails des données
+
+
+
+ a| 
+5
+ a| 
+Détails des données élevées + saisie et sortie de la méthode
+
+|===
+

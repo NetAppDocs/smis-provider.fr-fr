@@ -1,0 +1,26 @@
+---
+permalink: task-specify-the-ontapi-timeout-value.html 
+sidebar: sidebar 
+keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 300 sec 
+summary: 'Le fournisseur SMI-S appelle l"API ONTAP (ONTAPI) aux systèmes de stockage. Par défaut, le délai d"expiration de ONTAPI est de 300 secondes. Vous pouvez définir le délai d"attente sur une valeur comprise entre 60 et 300 secondes.' 
+---
+= Spécifiez la valeur du délai d'expiration ONTAPI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le fournisseur SMI-S appelle l'API ONTAP (ONTAPI) aux systèmes de stockage. Par défaut, le délai d'expiration de ONTAPI est de 300 secondes. Vous pouvez définir le délai d'attente sur une valeur comprise entre 60 et 300 secondes.
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+.Étape
+. Créez une variable d'environnement système ou utilisateur nommée `ONTAPI_TIMEOUT_SEC` avec la nouvelle valeur de temporisation (en secondes).
++
+Pour plus d'informations sur la création de variables d'environnement, reportez-vous à la documentation Windows.
+
+

@@ -1,0 +1,61 @@
+---
+permalink: task-specify-trace-settings.html 
+sidebar: sidebar 
+keywords: trace, enable, important, gathering, information, troubleshooting, performance, impact 
+summary: 'L"activation du suivi est importante pour recueillir des informations pour le dépannage. Cependant, le suivi activé peut avoir un impact sur les performances. Il est donc important de prendre en compte avec soin ce qui doit être tracé et la durée d"activation du suivi.' 
+---
+= Spécification des paramètres de trace
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+L'activation du suivi est importante pour recueillir des informations pour le dépannage. Cependant, le suivi activé peut avoir un impact sur les performances. Il est donc important de prendre en compte avec soin ce qui doit être tracé et la durée d'activation du suivi.
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+.Étapes
+. Accédez au fournisseur NetApp SMI-S.
+. Spécifiez les différents paramètres de trace, le cas échéant :
++
+[cols="2*"]
+|===
+| Action | Commande 
+
+
+ a| 
+Spécifiez les composants à suivre
+ a| 
+`*cimconfig -s traceComponents=_components_ -p*`
+
+
+
+ a| 
+Spécifiez la fonction de trace
+ a| 
+`*cimconfig -s traceFacility=_facility_ -p*`
+
+
+
+ a| 
+Spécifiez l'emplacement du fichier de trace
+ a| 
+`*cimconfig -s traceFilePath=_path_name_ -p*`
+
+
+
+ a| 
+Spécifiez le niveau de trace
+ a| 
+`*cimconfig -s traceLevel=_level_ -p*`
+
+|===
+. Redémarrez le serveur CIM :
++
+`*smis cimserver restart*`
+
+

@@ -1,0 +1,67 @@
+---
+permalink: reference-cimuser-command-options.html 
+sidebar: sidebar 
+keywords: cimuser, options, add, remove, modify, list, cim server 
+summary: Vous pouvez utiliser les options cimuser pour ajouter, supprimer, modifier et répertorier les utilisateurs du serveur CIM. 
+---
+= cimuser
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez utiliser le `cimuser` Commande permettant d'ajouter, de supprimer, de modifier et de lister les utilisateurs du serveur CIM, ainsi que de gérer leurs mots de passe.
+
+`cimuser _options_`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Administrateur (Windows)
+
+.Options
+* *-a*
++
+Ajoute un utilisateur CIM.
+
+* *-h, --help*
++
+Affiche l'aide pour le `cimuser` commande.
+
+* *-l*
++
+Répertorie les utilisateurs CIM.
+
+* *-m*
++
+Modifie le mot de passe d'un utilisateur CIM. Le mot de passe peut comporter entre 4 et 32 caractères.
+
+* *-n*
++
+Crée un nouveau mot de passe pour l'utilisateur spécifié. Le mot de passe peut comporter entre 4 et 32 caractères.
+
+* *-r*
++
+Supprime un utilisateur CIM spécifié.
+
+* *-u*
++
+Spécifie un nom d'utilisateur CIM.
+
+* *--version*
++
+Affiche la version du serveur CIM.
+
+* *-w*
++
+Spécifie le mot de passe pour l'utilisateur spécifié.
+
+
+
+Créez un utilisateur CIM nommé sydney avec un mot de passe password1 :
+
+[listing]
+----
+cimuser -a -u sydney -w password1
+User added successfully.
+----

@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-logging-and-tracing-overview.html 
+sidebar: sidebar 
+keywords: configure, smi-s provider, trace files, specify, levels, message logging, component, trace, file location 
+summary: 'Vous pouvez configurer la façon dont SMI-S Provider gère les fichiers journaux et de suivi, par exemple en spécifiant les niveaux de messages à enregistrer et le répertoire dans lequel les journaux sont enregistrés. Vous spécifiez également les composants à suivre, la cible à laquelle les messages de suivi sont écrits, le niveau de traçage et l"emplacement du fichier de trace.' 
+---
+= Présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez configurer la façon dont SMI-S Provider gère les fichiers journaux et de suivi, par exemple en spécifiant les niveaux de messages à enregistrer et le répertoire dans lequel les journaux sont enregistrés. Vous spécifiez également les composants à suivre, la cible à laquelle les messages de suivi sont écrits, le niveau de traçage et l'emplacement du fichier de trace.

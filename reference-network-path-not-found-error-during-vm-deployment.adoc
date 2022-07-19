@@ -1,0 +1,33 @@
+---
+permalink: reference-network-path-not-found-error-during-vm-deployment.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider. 
+---
+= Chemin réseau introuvable
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Message*
++
+`Network path not found`
+
+* *Description*
++
+Ce message reflète un problème DNS et se produit lors du déploiement de VM sur un partage SMB lorsque l'hôte ne possède pas d'enregistrement sur le serveur DNS.
+
++
+En général, le serveur DNS du domaine doit mettre automatiquement à jour l'enregistrement hôte dans un délai de 24 à 48 heures lorsqu'un nouvel hôte est configuré dans le domaine. Cependant, cette mise à jour ne se produit pas toujours automatiquement.
+
+* * Action corrective*
++
+** Si vous êtes un administrateur de domaine, mettez à jour manuellement l'enregistrement d'hôte DNS.
+** Si vous n'êtes pas un administrateur de domaine, mettez à jour le fichier hôte (`C:\Windows\System32\drivers\etc\hosts`).
++
+Le fichier hôte n'a pas d'extension de fichier (`.txt`).
+
+
+
+

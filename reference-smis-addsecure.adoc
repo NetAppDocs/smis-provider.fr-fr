@@ -1,0 +1,86 @@
+---
+permalink: reference-smis-addsecure.html 
+sidebar: sidebar 
+keywords: smis, addsecure, command, https connection configuration, manage, monitor 
+summary: La commande smis addSecure ajoute un système de stockage avec une connexion HTTPS à votre configuration pour vous permettre de gérer et de surveiller le périphérique. Sauf si cela est nécessaire, vous devez utiliser smis addSecure au lieu de smis add. 
+---
+= smis adsécurisée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis addsecure` Commande ajoute un système de stockage avec une connexion HTTPS à votre configuration pour vous permettre de gérer et de surveiller l'appareil. À moins que cela ne soit nécessaire, vous devez utiliser `smis addsecure` au lieu de `smis add`.
+
+`smis addsecure`
+
+`_storage_sys storage_sys_user_`+ `[-t {*http* | *https*}]`
+
+[NOTE]
+====
+Systèmes d'exploitation utilisant des langues autres que les États-Unis L'anglais ne peut pas utiliser le `addsecure` commande.
+
+====
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Administrateur (Windows)
+
+.Paramètres
+* `*_storage_sys_*`
++
+Nom ou adresse IP du système de stockage que vous ajoutez
+
++
+Si vous spécifiez l'adresse IP, vous pouvez utiliser IPv4 ou IPv6. Les destinataires IPv6 compressés et complets sont pris en charge, par exemple `1001:0002:0000:0000:0000:0000:0003:0004` ou `1001:2::3:4`.
+
+* `*_storage_sys_user_*`
++
+Nom d'utilisateur de l'administrateur qui gère le système de stockage que vous ajoutez
+
+* `*_storage_sys_pwd_*`
++
+Facultatif : mot de passe de l'administrateur qui gère le système de stockage que vous ajoutez
+
++
+Pour des raisons de sécurité, n'utilisez pas ce paramètre. Ce paramètre est fourni uniquement pour l'automatisation et la rétrocompatibilité.
+
+* `*[-t {http | https}]*`
++
+Protocole à utiliser : HTTPS (par défaut) ou HTTP
+
+
+
+
+
+== Protocole agent-client et agent-système de stockage
+
+Le `smis add` et `smis addsecure` les commandes déterminent le protocole utilisé entre le système de stockage et le fournisseur. Le `[-t {*http* | *https*}]` paramètre détermine le protocole utilisé entre le fournisseur et le client.
+
+Le `smis addsecure` commande et le `[-t {*https*}]` Le paramètre se connecte à l'aide du chiffrement SSL, et le trafic non chiffré n'est pas autorisé. Le `smis add` commande et le `[-t {*http*}]` Le paramètre se connecte sans chiffrement SSL, et le trafic non chiffré est autorisé.
+
+Vous devez tenir compte des besoins de sécurité de votre environnement avant de désactiver les connexions cryptées SSL.
+
+Ajout d'un système de stockage à l'aide d'IPv4 avec une adresse IP de 10.32.1.4 sur HTTPS :
+
+[listing]
+----
+smis addsecure 10.32.1.4 user2 password2
+----
+Un message de confirmation s'affiche, indiquant que le système de stockage a été correctement ajouté. Si une erreur s'est produite, un message d'erreur s'affiche.
+
+Ajout d'un système de stockage via IPv6 sur HTTPS :
+
+[listing]
+----
+smis addsecure 1001:0002:0000:0000:0000:0000:0003:0004 user2 password2
+smis addsecure 1001:2::3:4 user2 password2
+----
+Un message de confirmation s'affiche, indiquant que le système de stockage a été correctement ajouté. Si une erreur s'est produite, un message d'erreur s'affiche.
+
+Ajoutez un système de stockage avec une adresse IP 10.32.1.4 sur HTTPS sur un système non anglais :
+
+[listing]
+----
+cimcli -n root/ontap ci ontap_filerdata hostname="10.32.1.4" username="vsadmin" password="PasSw0Rd" port=443 comMechanism="HTTPS" --timeout 180
+----

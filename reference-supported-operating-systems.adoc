@@ -1,0 +1,55 @@
+---
+permalink: reference-supported-operating-systems.html 
+sidebar: sidebar 
+keywords: installing, smi-s provider, verify, windows, host, operating systems 
+summary: 'Avant d"installer SMI-S Provider, vous devez vérifier que l"hôte Windows exécute un système d"exploitation pris en charge.' 
+---
+= Versions de systèmes d'exploitation prises en charge
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Avant d'installer SMI-S Provider, vous devez vérifier que l'hôte Windows exécute un système d'exploitation pris en charge.
+
+[cols="3*"]
+|===
+| Système d'exploitation | Versions prises en charge | Logiciel client requis 
+
+
+ a| 
+Répertoires de base
+ a| 
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+
+ a| 
+Les bibliothèques d'exécution Microsoft Visual C{pp} 2010 sont automatiquement installées lors de l'installation de SMI-S Provider. Pour éviter les problèmes potentiels liés aux bibliothèques d'exécution, vous devez installer Microsoft Visual C{pp} 2010 Redistributable Package (x86). à partir de l'emplacement suivant : http://www.microsoft.com[]
+
+|===
+
+
+== SCVMM 2016 UR 2.1
+
+System Center Virtual machine Manager (SCVMM) 2016 Update Rollup (UR) 2.1 est requis pour gérer NetApp File Server avec NetApp SMI-S Provider 5.2.4 et versions ultérieures.
+
+Sans cette UR, SCVMM 2016 affiche la valeur du `Total Capacity` et `Available Capacity` options comme `*0 GB*` Pour les partages de fichiers existants dans NetApp File Server.
+
+Pour exécuter SMI-S Provider, la machine hôte du fournisseur doit respecter les spécifications suivantes :
+
+* La machine hôte du fournisseur ne peut pas être utilisée pour héberger un nœud Hyper-V.
+* SCVMM ne doit pas être exécuté sur la machine hôte du fournisseur.
+* La machine hôte du fournisseur ne doit pas exécuter d'autres programmes consommant beaucoup de mémoire.
+* La machine hôte du fournisseur ne doit pas exécuter de fournisseurs SMI-S provenant d'un autre fournisseur.
+
+
+Les hyperviseurs suivants sont pris en charge :
+
+* Microsoft Windows Server 2016 Hyper-V
+* VMware ESX 5.0
+* VMware ESX 5.1
+* VMware ESX 5.5
+* VMware ESX 6.0
+

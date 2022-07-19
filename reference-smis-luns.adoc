@@ -1,0 +1,48 @@
+---
+permalink: reference-smis-luns.html 
+sidebar: sidebar 
+keywords: smis luns, command, display, lun information, storage system 
+summary: La commande smis luns affiche les informations relatives aux LUN des systèmes de stockage. 
+---
+= lun smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis luns` La commande affiche les informations relatives aux LUN des systèmes de stockage.
+
+lun smis
+
+`[-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Utilisateur avec un nom d'utilisateur et un mot de passe valides
+
+.Paramètres
+* `*[-t {http | https}]*`
++
+Protocole à utiliser : HTTPS (par défaut) ou HTTP
+
+
+
+Le `smis luns` commande et sa sortie abrégée :
+
+[listing]
+----
+smis luns
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="ef805c0d-5269-47c6-ba0fd9cdbf5e2515",
+SystemCreationClassName="ONTAP_StorageSystem",SystemNa
+me="ONTAP:68f6b3c0-923a-11e2-a856-123478563412"
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="f81cb3bf-2f16-467c-8e30-88bae415ab05",SystemCreationClassName="ONT
+AP_StorageSystem",SystemName="ONTAP:68f6b3c0-923a-11e2-
+a856-123478563412"
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="684f5fb9-0fdd-4b97-8678-188774bdcdd0",SystemCreationClassName="ONT
+AP_StorageSystem",SystemName="ONTAP:68f6b3c0-923a-11e2-
+a856-123478563412"
+----

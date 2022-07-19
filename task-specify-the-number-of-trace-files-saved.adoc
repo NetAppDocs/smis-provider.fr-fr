@@ -1,0 +1,33 @@
+---
+permalink: task-specify-the-number-of-trace-files-saved.html 
+sidebar: sidebar 
+keywords: trace, enable, seven trace file, pegasus trace file num, system, space 
+summary: 'Si le traçage est activé, sept fichiers de trace sont enregistrés par défaut. Si vous avez besoin d"autres fichiers de trace enregistrés, vous pouvez augmenter le nombre maximal de fichiers de trace enregistrés en définissant la variable d"environnement PEGASUS_TRACE_FILE_NUM. Si vous augmentez le nombre maximal de fichiers de trace enregistrés, vous devez vous assurer que le système dispose de suffisamment d"espace sur son disque dur pour pouvoir accueillir les fichiers de trace.' 
+---
+= Spécifiez le nombre de fichiers de trace enregistrés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si le traçage est activé, sept fichiers de trace sont enregistrés par défaut. Si vous avez besoin d'enregistrer davantage de fichiers de trace, vous pouvez augmenter le nombre maximal de fichiers de trace enregistrés en définissant la variable d'environnement `PEGASUS_TRACE_FILE_NUM`. Si vous augmentez le nombre maximal de fichiers de trace enregistrés, vous devez vous assurer que le système dispose de suffisamment d'espace sur son disque dur pour pouvoir accueillir les fichiers de trace.
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+Si le traçage est activé, les informations de traçage sont écrites sur le `cimserver.trc` fichier. Les fichiers de trace pivotent. Quand `cimserver.trc` atteint la taille maximale du fichier de trace, son contenu est déplacé vers le `cimserver.trc._n_` fichier. Par défaut, `n` est une valeur comprise entre 0 et 5. Si vous avez besoin de plus de fichiers de trace enregistrés, vous augmentez la valeur de `_n_`.
+
+.Étapes
+. Accédez au fournisseur NetApp SMI-S.
+. Créez une variable d'environnement système ou utilisateur nommée `PEGASUS_TRACE_FILE_NUM` avec le nouveau nombre de fichiers de trace enregistrés.
++
+_Documentation Windows_ contient des informations supplémentaires sur la création de variables d'environnement.
+
+. Redémarrez le serveur CIM :
++
+`*smis cimserver restart*`
+
+

@@ -1,0 +1,37 @@
+---
+permalink: reference-smi-s-agent-sizing-and-performance-information.html 
+sidebar: sidebar 
+keywords: maximum, systems, netapp smi-s provider, help, understand, performance, capability 
+summary: Connaître le nombre maximum de systèmes gérés par le fournisseur SMI-S de NetApp vous aide à comprendre ses capacités de performance. 
+---
+= Performances et dimensionnement du fournisseur NetApp SMI-S
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Connaître le nombre maximum de systèmes gérés par le fournisseur SMI-S de NetApp vous aide à comprendre ses capacités de performance.
+
+*Dimensionnement*
+
+Le fournisseur NetApp SMI-S peut gérer jusqu'au nombre d'objets suivants dans clustered Data ONTAP :
+
+* 100 machines virtuelles de stockage (SVM) (sans indications)
+* 10 machines virtuelles de stockage (avec indications)
+* 1,500 LUN (par volume FlexVol)
+* 200 partages de fichiers CIFS (par volume FlexVol)
+
+
+Si le FlexVol contient à la fois des qtrees et des volumes, les qtrees apparaissent comme des répertoires. Veillez à ne pas supprimer les qtrees par erreur lors de la suppression de volumes.
+
+*Avis de rendement*
+
+Pour les configurations avec 5,000 volumes FlexVol ou 300,000 copies Snapshot, vous pouvez rencontrer des problèmes de performances avec les éléments suivants `cimcli` commandes :
+
+* `cimcli ei ONTAP_Snapshot -n root/ontap`
+* `cimcli ei ONTAP_SnapshotBasedOnFlexVol -n root/ontap`
+* `cimcli ei ONTAP_StorageVolumeStats -n root/ontap`
+
+
+La matrice d'interopérabilité (IMT) contient les dernières informations sur le dimensionnement et les performances.

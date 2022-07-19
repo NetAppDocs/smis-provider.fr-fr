@@ -1,0 +1,41 @@
+---
+permalink: reference-smis-delete.html 
+sidebar: sidebar 
+keywords: smis debate, command, storage system 
+summary: La commande smis delete supprime un système de stockage. 
+---
+= suppression smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis delete` commande supprime un système de stockage.
+
+`smis delete`
+
+`_storage_sys_`
+
+`[-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Administrateur (Windows)
+
+.Paramètres
+* `*_storage_sys_*`
++
+Nom ou adresse IP du système de stockage que vous ajoutez
+
+* `*[-t {http | https}]*`
++
+Protocole à utiliser : HTTPS (par défaut) ou HTTP
+
+
+
+Supprimer un système de stockage nommé mgt-1 :
+
+`*smis delete mgt-1*`
+
+Si aucun message d'erreur ne s'affiche, le système de stockage a été correctement supprimé.

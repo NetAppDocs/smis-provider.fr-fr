@@ -1,0 +1,68 @@
+---
+permalink: reference-smis-config-show.html 
+sidebar: sidebar 
+keywords: smis config show, list, current cim server, configuration, information 
+summary: La commande smis config show répertorie les informations de configuration actuelles du serveur CIM. 
+---
+= affichage de configuration smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis config show` Commande répertorie les informations de configuration actuelles du serveur CIM.
+
+`smis config show`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Administrateur (Windows)
+
+Le `smis config show` et son résultat :
+
+[listing]
+----
+smis config show
+slp:
+Current value: true
+
+tracelevel:
+Current value: 4
+
+traceComponents:
+Current value: XmlIO,Thread, IndicationGeneration, DiscardedData, CMPIProvider, LogMessages, ProviderManager, SSL, Authentication, Authorization
+
+traceFilePath:
+Current value: traces/cimserver.trc
+
+enableAuditLog:
+Current value: true
+
+logLevel:
+Current value: WARNING
+
+sslKeyFilePath:
+Current value: cimom.key
+
+sslCertificateFilePath:
+Current value: cimom.cert
+
+passwordFilePath:
+Current value: cimserver.passwd
+
+enableHttpConnection:
+Current value: true
+
+enableHttpsConnection:
+Current value: true
+
+httpPort:
+Current value: 5988
+
+httpsPort:
+Current value: 5989
+
+enableAuthentication:
+Current value: true
+----

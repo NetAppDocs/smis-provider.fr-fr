@@ -1,0 +1,38 @@
+---
+permalink: reference-logging-levels.html 
+sidebar: sidebar 
+keywords: messages, specify, logged 
+summary: 'Vous pouvez spécifier les types de messages consignés (par exemple, vous voulez que seuls les messages système mortels soient consignés).' 
+---
+= Niveaux de journalisation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez spécifier les types de messages consignés (par exemple, vous voulez que seuls les messages système mortels soient consignés).
+
+Vous pouvez configurer le niveau de journalisation sur l'un des éléments suivants :
+
+* *TRACE*
++
+Enregistre les messages de trace dans le journal cimserver_standard.
+
+* *INFORMATION*
++
+Consigne tous les messages du système (information, avertissement, grave et mortel).
+
+* *AVERTISSEMENT*
++
+Journalise les messages d'avertissement, graves et mortels du système.
+
+* *GRAVE*
++
+Consigne les messages graves et mortels du système
+
+* *MORTEL*
++
+Journalise uniquement les messages système mortels
+
+

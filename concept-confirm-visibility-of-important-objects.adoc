@@ -1,0 +1,16 @@
+---
+permalink: concept-confirm-visibility-of-important-objects.html 
+sidebar: sidebar 
+keywords: manage, storage, system, confirm, important, logic, physical, object, netapp smis-s provider 
+summary: Une fois que vous avez ajouté un système de stockage géré, vous devez confirmer que tous les objets logiques et physiques importants sont bien présents dans NetApp SMI-S Provider. 
+---
+= Confirmer la visibilité des objets importants
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Une fois que vous avez ajouté un système de stockage géré, vous devez confirmer que tous les objets logiques et physiques importants sont bien présents dans NetApp SMI-S Provider.
+
+Vous pouvez utiliser le `smis` Commande pour afficher les objets situés dans le référentiel CIMOM NetApp SMI-S Provider. Par exemple, utilisez `smis list` pour afficher des systèmes de stockage supplémentaires et utiliser `smis luns` Pour afficher les informations relatives aux LUN.

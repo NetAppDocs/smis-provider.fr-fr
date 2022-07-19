@@ -1,0 +1,14 @@
+---
+permalink: concept-prepare-for-deployment-overview.html 
+sidebar: sidebar 
+keywords: netapp, smi-s provider, verify, supported, operating system, platform, licenses, minimum, requirements 
+summary: 'Avant de déployer NetApp SMI-S Provider, vérifiez que votre système d"exploitation et votre plateforme sont pris en charge, que vous disposez des licences requises et que vos hôtes répondent aux exigences minimales.' 
+---
+= Présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Avant de déployer NetApp SMI-S Provider, vérifiez que votre système d'exploitation et votre plateforme sont pris en charge, que vous disposez des licences requises et que vos hôtes répondent aux exigences minimales.

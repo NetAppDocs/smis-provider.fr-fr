@@ -1,0 +1,14 @@
+---
+permalink: concept-cim-user-commands.html 
+sidebar: sidebar 
+keywords: cimuser, command, add, delete, list, cim server, manage, password 
+summary: Vous pouvez utiliser la commande cimuser pour ajouter, supprimer et lister les utilisateurs du serveur CIM, ainsi que gérer leurs mots de passe. 
+---
+= Commandes utilisateur CIM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez utiliser le `cimuser` Commande permettant d'ajouter, de supprimer et de répertorier les utilisateurs du serveur CIM, ainsi que de gérer leurs mots de passe.

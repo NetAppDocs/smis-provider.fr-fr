@@ -1,0 +1,32 @@
+---
+permalink: concept-smi-s-provider-commands-overview.html 
+sidebar: sidebar 
+keywords: smis, commands, manage, storage, system, display, cim object manager 
+summary: 'Vous pouvez utiliser les commandes smis pour gérer les systèmes de stockage et afficher des informations sur le gestionnaire d"objets CIM.' 
+---
+= Présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez utiliser le `smis` Commandes permettant de gérer les systèmes de stockage et d'afficher des informations sur le gestionnaire d'objets CIM.
+
+Une aide est disponible pour le `smis` via la commande `-help` option.
+
+* *smis `-help`*
++
+Affiche un récapitulatif de commande.
+
+* *smis `-help` exemples*
++
+Affiche des exemples d'utilisation.
+
+* *smis `-help _subcommand_`*
++
+Affiche l'aide de la sous-commande spécifiée.
+
+
+
+La valeur par défaut du délai d'attente de l'outil smis est de 180 secondes.

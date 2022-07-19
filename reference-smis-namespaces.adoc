@@ -1,0 +1,41 @@
+---
+permalink: reference-smis-namespaces.html 
+sidebar: sidebar 
+keywords: smis namespace, command, list, registered, namespace, cimom 
+summary: La commande smis Namespaces répertorie les espaces de noms enregistrés pour le CIMOM. 
+---
+= espaces de noms smis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le `smis namespaces` Commande répertorie les espaces de noms enregistrés pour le CIMOM.
+
+espaces de noms smis
+
+`[-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+* Windows : `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+
+Utilisateur avec un nom d'utilisateur et un mot de passe valides
+
+.Paramètres
+* `*[-t {http | https}]*`
++
+Protocole à utiliser : HTTPS (par défaut) ou HTTP
+
+
+
+Le `smis namespaces` commande et sa sortie abrégée :
+
+[listing]
+----
+smis namespaces
+interop
+root/ontap
+----

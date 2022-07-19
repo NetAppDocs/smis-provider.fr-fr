@@ -1,0 +1,30 @@
+---
+permalink: reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider. 
+---
+= Les ports doivent être ajoutés manuellement en tant qu'exceptions sur les pare-feu non par défaut
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Numéro*
++
+Si vous utilisez un pare-feu autre que le pare-feu Windows par défaut, vous pouvez rencontrer les problèmes suivants :
+
++
+** SMI-S Provider n'est pas en mesure de communiquer avec un client SMI-S supprimé.
+** Le client SMI-S ne peut pas recevoir d'indications du fournisseur SMI-S.
+
+
+* *Cause*
++
+Ce problème survient lorsque vous utilisez un pare-feu autre que le pare-feu Windows par défaut sans ajouter manuellement les ports nécessaires à titre d'exception.
+
+* * Action corrective*
++
+Ajoutez les ports 427, 5988 et 5989 comme exceptions à votre pare-feu.
+
+

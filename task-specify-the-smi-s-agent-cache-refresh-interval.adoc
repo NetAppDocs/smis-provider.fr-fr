@@ -1,0 +1,33 @@
+---
+permalink: task-specify-the-smi-s-agent-cache-refresh-interval.html 
+sidebar: sidebar 
+keywords: smi-s provider, automatic, retrieves, information, storage systems, 300 sec, cache, refresh 
+summary: 'Par défaut, SMI-S Provider récupère automatiquement les informations des systèmes de stockage toutes les cinq minutes (300 secondes). Vous pouvez définir l"intervalle d"actualisation automatique du cache (variable d"environnement CACHE_REFRESH_SEC) sur une valeur comprise entre 300 et 86400 secondes (24 heures).' 
+---
+= Spécifiez l'intervalle d'actualisation automatique du cache du SMI-S Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Par défaut, SMI-S Provider récupère automatiquement les informations des systèmes de stockage toutes les cinq minutes (300 secondes). Vous pouvez définir l'intervalle d'actualisation automatique du cache (`CACHE_REFRESH_SEC` variable d'environnement) à une valeur de 300 à 86400 secondes (24 heures).
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+Si vous souhaitez actualiser manuellement l'état du système de stockage à tout moment, vous pouvez utiliser `smis refresh` commande.
+
+.Étapes
+. Accédez au fournisseur NetApp SMI-S.
+. Créez une variable d'environnement système ou utilisateur nommée `CACHE_REFRESH_SEC` avec la nouvelle valeur d'intervalle de rafraîchissement (en secondes).
++
+Pour plus d'informations sur la création de variables d'environnement, reportez-vous à la documentation Windows.
+
+. Redémarrez le serveur CIM :
++
+`*smis cimserver restart*`
+
+

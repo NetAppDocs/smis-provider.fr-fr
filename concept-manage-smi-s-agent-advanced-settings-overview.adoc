@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-smi-s-agent-advanced-settings-overview.html 
+sidebar: sidebar 
+keywords: manage, advance, smi-s provider, smis-s cache, refresh, interval, ontapi, timeout, thread, service, queue 
+summary: 'Vous pouvez gérer les paramètres avancés pour SMI-S Provider, tels que spécifier l"intervalle d"actualisation du cache SMI-S, le délai d"expiration de l"API CONTAPI et le nombre maximal de threads par file d"attente de service de messages.' 
+---
+= Présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez gérer les paramètres avancés pour SMI-S Provider, tels que spécifier l'intervalle d'actualisation du cache SMI-S, le délai d'expiration de l'API CONTAPI et le nombre maximal de threads par file d'attente de service de messages.

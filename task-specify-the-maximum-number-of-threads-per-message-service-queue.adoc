@@ -1,0 +1,35 @@
+---
+permalink: task-specify-the-maximum-number-of-threads-per-message-service-queue.html 
+sidebar: sidebar 
+keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance 
+summary: 'Par défaut, SMI-S Provider autorise 80 threads par file d"attente de service de messages. Vous pouvez spécifier la valeur de filetage maximale de 1 à 5000. L"augmentation du nombre maximum de threads peut avoir un impact sur les performances de la machine SMI-S Provider, alors réfléchissez soigneusement à la nécessité d"augmenter cette valeur.' 
+---
+= Spécifiez le nombre maximal de threads par file d'attente de service de messages
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Par défaut, SMI-S Provider autorise 80 threads par file d'attente de service de messages. Vous pouvez spécifier la valeur de filetage maximale de 1 à 5000. L'augmentation du nombre maximum de threads peut avoir un impact sur les performances de la machine SMI-S Provider, alors réfléchissez soigneusement à la nécessité d'augmenter cette valeur.
+
+.Avant de commencer
+* Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.
+* Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
+
+
+Si votre fichier de trace affiche plusieurs lignes de `insufficient resources` sortie, vous devez augmenter le nombre de threads par incréments de 500.
+
+Si vous définissez le nombre maximum de threads sur moins de 20, utilisez le `*cimcli -n root/ontap niall*` le fournisseur ne répond plus et renvoie la `Insufficient threadpool` message dans le fichier de trace. Dans ce cas, vous devez augmenter le nombre de threads par incréments de 500, puis redémarrer le fournisseur.
+
+.Étapes
+. Accédez au fournisseur NetApp SMI-S.
+. Créez une variable d'environnement système ou utilisateur nommée `PEGASUS_MAX_THREADS_PER_SVC_QUEUE` avec la nouvelle valeur de filetage maximale.
++
+Pour plus d'informations sur la création de variables d'environnement, reportez-vous à la documentation Windows.
+
+. Redémarrez le serveur CIM :
++
+`*smis cimserver restart*`
+
+

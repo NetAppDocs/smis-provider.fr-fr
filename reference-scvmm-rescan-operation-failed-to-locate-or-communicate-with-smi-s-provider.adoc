@@ -1,0 +1,27 @@
+---
+permalink: reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider. 
+---
+= L'opération de nouvelle analyse SCVMM n'a pas pu localiser ou communiquer avec SMI-S Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Numéro*
++
+Dans de rares cas, SCVMM n'est pas en mesure de localiser SMI-S Provider.
+
+* *Cause*
++
+Ce problème peut survenir si l'infrastructure de sécurité est mise à jour avec de nouveaux GPO. Lorsqu'ils prennent effet après le redémarrage de l'hôte SMI-S Provider, l'hôte SCVMM risque de ne pas faire confiance au SMI-S Provider ou à l'hôte.
+
+* * Action corrective*
++
+.. Désinstallez SMI-S Provider et réinstallez-le.
+.. Exécutez l'opération de nouvelle analyse dans SCVMM pour SMI-S Provider.
+
+
+

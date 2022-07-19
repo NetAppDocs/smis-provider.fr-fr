@@ -1,0 +1,41 @@
+---
+permalink: reference-handling-smi-s-agent-crashes-in-windows.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider. 
+---
+= SMI-S Provider tombe en panne sous Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Numéro*
++
+SMI-S Provider tombe en panne sous Windows.
+
+* *Cause*
++
+Ce problème survient pour plusieurs raisons, et est documenté dans les fichiers générés au moment de l'incident.
+
+* * Action corrective*
++
+Redémarrez le fournisseur et envoyez les informations suivantes au support technique pour une analyse plus approfondie :
+
++
+** Vider le fichier du `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus\logs` répertoire
+** Fichiers journaux à partir du `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus\logs` répertoire
+** Fichiers de trace à partir du `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus\traces` répertoire
++
+Des messages similaires à ce qui suit apparaissent également dans le fichier de trace :
+
++
+`23-May-2013 20:46:36.874 INFO cimserver: createMiniDump: SMI-S Agent has crashed, attempting to generate a dump file`
+
++
+`23-May-2013 20:46:37.14 INFO cimserver: createMiniDump: Process dumped to C:\Program Files (x86)\netapp\smis\pegasus\logs\SMI-S Agent-8be55da-2011_05_23-20_46_36.dmp`
+
+** Les fichiers `version.txt` et `cimserver_current.conf` à partir du `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus` répertoire
+
+
+
