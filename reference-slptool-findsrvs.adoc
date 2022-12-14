@@ -13,10 +13,13 @@ summary: La commande slptool findsrvs recherche les services WBEM exécutés sur
 [role="lead"]
 Le `slptool findsrvs` Commande recherche les services WBEM exécutés sur un réseau.
 
+.Syntaxe
 `slptool findsrvs _service_`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -26,6 +29,7 @@ Spécifie le type de service.
 
 
 
+.Exemple
 Le `slptool findsrvs` la commande et sa sortie :
 
 [listing]

@@ -13,12 +13,15 @@ summary: 'La commande smis Cimserver démarre, arrête, redémarre ou obtient l"
 [role="lead"]
 Le `smis cimserver` La commande démarre, arrête, redémarre ou obtient l'état du serveur CIM.
 
+.Syntaxe
 `smis cimserver`
 
 `{*start* | *stop* | *restart* | *status*}`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Administrateur (Windows)
 
 .Paramètres

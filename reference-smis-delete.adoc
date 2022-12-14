@@ -13,14 +13,17 @@ summary: La commande smis delete supprime un système de stockage.
 [role="lead"]
 Le `smis delete` commande supprime un système de stockage.
 
+.Syntaxe
 `smis delete`
 
 `_storage_sys_`
 
 `[-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Administrateur (Windows)
 
 .Paramètres
@@ -34,6 +37,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Supprimer un système de stockage nommé mgt-1 :
 
 `*smis delete mgt-1*`

@@ -18,6 +18,7 @@ Toutes les commandes SMI-S entrantes sont enregistrées dans des fichiers journa
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Les données du journal d'audit peuvent fournir un enregistrement des modifications d'accès, d'activité et de configuration d'un serveur CIM. Le contenu du fichier d'audit comprend la commande émise, le nom de la commande émise et l'heure à laquelle la commande a été émise.
 
 Propriété de configuration dynamique `enableAuditLog` active ou désactive la journalisation des audits au moment de l'exécution. Par défaut, enableAuditLog est défini sur true.

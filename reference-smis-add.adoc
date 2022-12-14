@@ -13,6 +13,7 @@ summary: La commande smis add ajoute un système de stockage avec une connexion 
 [role="lead"]
 Le `smis add` Commande ajoute un système de stockage avec une connexion HTTP à votre configuration pour vous permettre de gérer et de surveiller le périphérique. À moins que cela ne soit nécessaire, vous devez utiliser `smis addsecure` au lieu de `smis add`.
 
+.Syntaxe
 `smis add`
 
 `_storage_sys storage_sys_user_`+
@@ -23,8 +24,10 @@ Le `smis add` Commande ajoute un système de stockage avec une connexion HTTP à
 Systèmes d'exploitation utilisant des langues autres que les États-Unis L'anglais ne peut pas utiliser le `add` commande.
 
 ====
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Administrateur (Windows)
 
 .Paramètres
@@ -62,6 +65,7 @@ Le `smis addsecure` commande et le `[-t {*https*}]` Le paramètre se connecte à
 
 Vous devez tenir compte des besoins de sécurité de votre environnement avant de désactiver les connexions cryptées SSL.
 
+.Exemple
 Ajout d'un système de stockage utilisant IPv4 avec une adresse IP de 10.32.1.4 sur HTTP :
 
 [listing]
@@ -70,6 +74,7 @@ smis add 10.32.1.4 user2
 ----
 Un message de confirmation s'affiche, indiquant que le système de stockage a été correctement ajouté. Si une erreur s'est produite, un message d'erreur s'affiche.
 
+.Exemple
 Ajout d'un système de stockage via IPv6 sur HTTP :
 
 [listing]
@@ -79,6 +84,7 @@ smis add 1001:2::3:4 user2
 ----
 Un message de confirmation s'affiche, indiquant que le système de stockage a été correctement ajouté. Si une erreur s'est produite, un message d'erreur s'affiche.
 
+.Exemple
 Ajoutez un système de stockage avec une adresse IP 10.32.1.4 sur HTTP sur un système non anglais :
 
 [listing]

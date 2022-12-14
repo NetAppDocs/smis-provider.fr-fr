@@ -13,12 +13,14 @@ summary: 'Vous pouvez installer le logiciel NetApp SMI-S Provider pour gérer le
 [role="lead"]
 Vous pouvez installer le logiciel NetApp SMI-S Provider pour gérer les systèmes de stockage qui exécutent Data ONTAP. Cependant, vous ne pouvez pas revenir à une version antérieure ou revenir à une version antérieure. Par défaut, le logiciel NetApp SMI-S Provider est installé dans le `C:\Program Files (x86)\NetApp\smis\pegasus` répertoire.
 
+.Avant de commencer
 Vous devez déjà disposer des informations d'identification et du logiciel suivants :
 
 * Informations d'identification pour le compte Administrateur Windows
 * Pack logiciel NetApp SMI-S Provider
 
 
+.Description de la tâche
 Suite au processus d'installation, le service CIMOM (appelé « NetApp SMI-S Provider » dans Service Control Manager) et le démon SLP (nommé « Service Location Protocol » dans Service Control Manager) s'exécutent en tant que services automatiques afin de démarrer automatiquement, même après un redémarrage de l'hôte.
 
 Cette procédure d'installation reflète une installation neuve.

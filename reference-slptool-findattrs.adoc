@@ -13,10 +13,13 @@ summary: La commande slptool findattrs trouve les attributs WBEM exécutés sur 
 [role="lead"]
 Le `slptool findattrs` Commande recherche les attributs WBEM exécutés sur un réseau.
 
+.Syntaxe
 `slptool findattrs _service_`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -26,6 +29,7 @@ Spécifie le type de service.
 
 
 
+.Exemple
 Le `slptool findattrs` commande et sa sortie abrégée :
 
 [listing]

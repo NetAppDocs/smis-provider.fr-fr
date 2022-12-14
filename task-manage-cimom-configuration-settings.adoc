@@ -18,6 +18,7 @@ Vous pouvez utiliser SMI-S Provider pour gérer la configuration CIMOM, comme l'
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Si votre environnement nécessite un trafic crypté vers et depuis le serveur CIM, vous devez d'abord désactiver les connexions HTTP, puis vérifier que les connexions HTTPS du serveur CIM sont activées.
 
 .Étapes

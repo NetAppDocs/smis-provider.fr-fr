@@ -13,12 +13,15 @@ summary: La commande smis Class répertorie les informations relatives à une cl
 [role="lead"]
 Le `smis class` commande répertorie les informations relatives à une classe spécifiée ou à toutes les classes.
 
+.Syntaxe
 `smis class`
 
 `_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -56,6 +59,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis class` commande et sa sortie abrégée :
 
 [listing]

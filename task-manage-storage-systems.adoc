@@ -18,6 +18,7 @@ Vous pouvez utiliser les commandes NetApp SMI-S Provider pour ajouter, supprimer
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Pour ONTAP, vous devez spécifier une adresse IP de gestion pour un SVM, et non une adresse IP de cluster, et vous devez fournir les informations d'identification pour un utilisateur vsadmin. Le fournisseur SMI-S ne prend pas en charge les adresses IP de cluster ni les adresses IP de gestion de nœuds, ni les SVM d'administration de nœuds.
 
 [NOTE]

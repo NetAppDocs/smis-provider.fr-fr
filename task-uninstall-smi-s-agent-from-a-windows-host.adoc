@@ -13,6 +13,7 @@ summary: 'Vous pouvez désinstaller SMI-S Provider si nécessaire. Par exemple, 
 [role="lead"]
 Vous pouvez désinstaller SMI-S Provider si nécessaire. Par exemple, selon la version de votre installation existante, vous devrez peut-être désinstaller l'installation existante de SMI-S Provider avant de pouvoir installer la dernière version.
 
+.Description de la tâche
 Si vous envisagez de désinstaller SMI-S Provider et de procéder à une réinstallation propre, vous devez supprimer manuellement tout le contenu du serveur CIM.
 
 Si vous ne voulez pas une réinstallation propre, SMI-S Provider conserve la configuration, l'utilisateur et d'autres fichiers de base de données après la désinstallation.

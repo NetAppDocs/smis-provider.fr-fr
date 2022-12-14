@@ -13,12 +13,15 @@ summary: 'La commande disques Thesmis affiche les informations sur le disque des
 [role="lead"]
 Le `smis disks` la commande affiche les informations sur le disque des systèmes de stockage. `smis disks` Ne fonctionne qu'avec des contrôleurs Data ONTAP 7-mode.
 
+.Syntaxe
 disques smis
 
 `[-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -28,6 +31,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis disks` commande et sa sortie abrégée :
 
 [listing]

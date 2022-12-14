@@ -13,15 +13,18 @@ summary: La commande smis Namespaces répertorie les espaces de noms enregistré
 [role="lead"]
 Le `smis namespaces` Commande répertorie les espaces de noms enregistrés pour le CIMOM.
 
+.Syntaxe
 espaces de noms smis
 
 `[-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
 * Windows : `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -31,6 +34,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis namespaces` commande et sa sortie abrégée :
 
 [listing]

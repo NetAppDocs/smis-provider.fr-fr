@@ -13,10 +13,13 @@ summary: Vous pouvez utiliser les options cimuser pour ajouter, supprimer, modif
 [role="lead"]
 Vous pouvez utiliser le `cimuser` Commande permettant d'ajouter, de supprimer, de modifier et de lister les utilisateurs du serveur CIM, ainsi que de gérer leurs mots de passe.
 
+.Syntaxe
 `cimuser _options_`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Administrateur (Windows)
 
 .Options
@@ -58,6 +61,7 @@ Spécifie le mot de passe pour l'utilisateur spécifié.
 
 
 
+.Exemple
 Créez un utilisateur CIM nommé sydney avec un mot de passe password1 :
 
 [listing]

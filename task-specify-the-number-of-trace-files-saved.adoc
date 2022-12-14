@@ -18,6 +18,7 @@ Si le traçage est activé, sept fichiers de trace sont enregistrés par défaut
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Si le traçage est activé, les informations de traçage sont écrites sur le `cimserver.trc` fichier. Les fichiers de trace pivotent. Quand `cimserver.trc` atteint la taille maximale du fichier de trace, son contenu est déplacé vers le `cimserver.trc._n_` fichier. Par défaut, `n` est une valeur comprise entre 0 et 5. Si vous avez besoin de plus de fichiers de trace enregistrés, vous augmentez la valeur de `_n_`.
 
 .Étapes

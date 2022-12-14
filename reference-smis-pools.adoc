@@ -13,12 +13,15 @@ summary: La commande smis pools répertorie les pools de stockage des systèmes 
 [role="lead"]
 Le `smis pools` la commande répertorie les pools de stockage des systèmes de stockage.
 
+.Syntaxe
 `smis pools`
 
 `[-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -28,6 +31,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis pools` commande et sa sortie abrégée :
 
 [listing]

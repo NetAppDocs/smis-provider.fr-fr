@@ -13,6 +13,7 @@ summary: La commande smis volumes répertorie les volumes traditionnels et flexi
 [role="lead"]
 Le `smis volumes` la commande répertorie les volumes traditionnels et flexibles pour les systèmes de stockage.
 
+.Syntaxe
 `smis volumes`
 
 `[-t {*http* | *https*}]`
@@ -22,8 +23,10 @@ Le `smis volumes` la commande répertorie les volumes traditionnels et flexibles
 Pour clustered Data ONTAP, vous devez utiliser le `smis pools` au lieu de la commande `smis volumes` commande.
 
 ====
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -33,6 +36,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis volumes` commande et sa sortie abrégée :
 
 [listing]

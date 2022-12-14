@@ -13,6 +13,7 @@ summary: 'Avant d"installer NetApp SMI-S Provider, vous devez télécharger le p
 [role="lead"]
 Avant d'installer NetApp SMI-S Provider, vous devez télécharger le pack logiciel à partir du site de support NetApp.
 
+.Avant de commencer
 Vous devez avoir créé un compte sur le site de support NetApp https://mysupport.netapp.com/site/global/dashboard["Support NetApp"].
 
 .Étapes

@@ -13,10 +13,13 @@ summary: 'La commande smis cimom décrit le gestionnaire d"objets CIM.'
 [role="lead"]
 Le `smis cimom` La commande décrit le gestionnaire d'objets CIM.
 
+.Syntaxe
 smis cimom `[-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -26,6 +29,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis cimom` la commande et sa sortie :
 
 [listing]

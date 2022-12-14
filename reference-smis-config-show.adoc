@@ -13,12 +13,16 @@ summary: La commande smis config show répertorie les informations de configurat
 [role="lead"]
 Le `smis config show` Commande répertorie les informations de configuration actuelles du serveur CIM.
 
+.Syntaxe
 `smis config show`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Administrateur (Windows)
 
+.Exemple
 Le `smis config show` et son résultat :
 
 [listing]

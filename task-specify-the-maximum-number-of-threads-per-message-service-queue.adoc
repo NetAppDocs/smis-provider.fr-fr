@@ -18,6 +18,7 @@ Par défaut, SMI-S Provider autorise 80 threads par file d'attente de service de
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Si votre fichier de trace affiche plusieurs lignes de `insufficient resources` sortie, vous devez augmenter le nombre de threads par incréments de 500.
 
 Si vous définissez le nombre maximum de threads sur moins de 20, utilisez le `*cimcli -n root/ontap niall*` le fournisseur ne répond plus et renvoie la `Insufficient threadpool` message dans le fichier de trace. Dans ce cas, vous devez augmenter le nombre de threads par incréments de 500, puis redémarrer le fournisseur.

@@ -18,6 +18,7 @@ Par défaut, SMI-S Provider récupère automatiquement les informations des syst
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Si vous souhaitez actualiser manuellement l'état du système de stockage à tout moment, vous pouvez utiliser `smis refresh` commande.
 
 .Étapes

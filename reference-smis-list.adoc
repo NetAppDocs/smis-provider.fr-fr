@@ -13,12 +13,15 @@ summary: La commande smis list affiche les systèmes de stockage qui sont ajout�
 [role="lead"]
 Le `smis list` affiche les systèmes de stockage ajoutés.
 
+.Syntaxe
 liste smis
 
 `[-t {*http* | *https*}]`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 .Paramètres
@@ -28,6 +31,7 @@ Protocole à utiliser : HTTPS (par défaut) ou HTTP
 
 
 
+.Exemple
 Le `smis list` la commande et sa sortie :
 
 [listing]

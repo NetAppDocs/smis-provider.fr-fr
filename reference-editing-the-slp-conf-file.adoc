@@ -13,8 +13,10 @@ summary: 'Le fichier de configuration slp.conf fournit des options supplémentai
 [role="lead"]
 Le `slp.conf` Le fichier de configuration contient des options supplémentaires qui vous permettent de gérer un serveur SLAPD (service Location Protocol daemon).
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\cfg`
 
+.Niveau de privilège
 Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 
@@ -44,6 +46,7 @@ Active la sécurité des adresses URL reçues et des listes d'attributs.
 
 
 
+.Exemple
 Voici un exemple abrégé du `slp.conf` fichier de configuration :
 
 [listing]

@@ -18,6 +18,7 @@ Les indications d'alerte, de quota de système de fichiers et de cycle de vie so
 * Vous devez déjà vous connecter au système hôte en tant qu'administrateur.
 
 
+.Description de la tâche
 Quand `PEGASUS_DISABLE_INDICATIONS` est défini sur `false`, Puis alerte (`ONTAP_AlertIndication`), quota de système de fichiers (`ONTAP_FSQuotaIndication`), et les indications relatives au cycle de vie sont activées sur le fournisseur NetApp SMI-S.
 
 .Étapes

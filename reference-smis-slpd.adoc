@@ -13,14 +13,18 @@ summary: La commande slpd smis démarre ou arrête le démon SLP.
 [role="lead"]
 Le `smis slpd` La commande démarre ou arrête le démon SLP.
 
+.Syntaxe
 `smis slpd`
 
 `{*start* | *stop*}`
 
+.Emplacement
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Niveau de privilège
 Administrateur (Windows)
 
+.Exemple
 Démarrez le démon SLP :
 
 [listing]
