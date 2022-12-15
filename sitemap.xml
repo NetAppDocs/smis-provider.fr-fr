@@ -141,7 +141,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-access-is-denied-error.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -169,14 +169,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-cimconfig-command-options.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-cimuser-command-options.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -211,7 +211,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-editing-the-slp-conf-file.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -295,7 +295,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-possible-errors-when-loading-shared-libraries.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -323,21 +323,21 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-slptool-command-options.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-slptool-findattrs.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-slptool-findsrvs.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -365,147 +365,147 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-add.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-addsecure.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-cimom.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-cimserver.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-class.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-config-show.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-crp.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-crsp.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-delete.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-disks.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-exports.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-initiators.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-licensed.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-list.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-luns.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-namespaces.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-pools.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-refresh.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-slpd.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-version.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/reference-smis-volumes.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -575,7 +575,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider//search.html</loc>
       
-      <lastmod>2022-11-17T06:01:35+00:00</lastmod>
+      <lastmod>2022-12-15T12:23:26+00:00</lastmod>
       
     </url>
   
@@ -596,21 +596,21 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-download-smi-s-provider.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-enable-indications-in-smi-s-agent.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-enable-or-disable-audit-log-for-smi-s-commands.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -631,7 +631,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-install-smi-s-agent-on-a-windows-host.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -645,14 +645,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-manage-cimom-configuration-settings.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-manage-storage-systems.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -673,14 +673,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-specify-the-maximum-number-of-threads-per-message-service-queue.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-specify-the-number-of-trace-files-saved.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -694,7 +694,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -715,7 +715,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-uninstall-smi-s-agent-from-a-windows-host.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
@@ -729,7 +729,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/smis-provider/task-verify-the-cim-server-status.html</loc>
       
-      <lastmod>2022-11-17T06:01:21+00:00</lastmod>
+      <lastmod>2022-12-14T18:16:07+00:00</lastmod>
       
     </url>
   
