@@ -16,7 +16,7 @@ La taille de partage SMB 3.0, nouvelle ou existante, peut chuter à 0 dans Syste
 
 * *Cause*
 +
-Ce problème survient lorsque la réinitialisation de quota est très longue en Data ONTAP raison des E/S volumineuses, les partages SMB 3.0 nouveaux ou existants peuvent chuter à 0 dans SCVMM. De ce fait, les nouveaux serveurs virtuels ne peuvent pas être provisionnés sur les partages SMB 3.0 nouveaux ou existants.
+Si la réinitialisation des quotas prend beaucoup de temps dans ONTAP en raison d'E/S importantes, la taille du partage SMB 3.0 nouveau ou existant peut tomber à 0 dans SCVMM. Lorsque ce problème se produit, les nouvelles machines virtuelles ne peuvent pas être provisionnées sur des partages SMB 3.0 nouveaux ou existants.
 
 * * Action corrective*
 +

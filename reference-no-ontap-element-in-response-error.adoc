@@ -16,10 +16,10 @@ summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider.
 
 * *Description*
 +
-Ce message se produit lorsque l'API ONTAPI se déclenche. Le délai par défaut de l'API ONTAPI est de 60 secondes, ce qui peut être trop court dans certains scénarios.
+Ce message apparaît lorsque l'appel de l'API ONTAP est dépassé. Le délai d'attente par défaut de l'appel de l'API ONTAP est de 60 secondes, ce qui peut être trop court dans certains scénarios.
 
 * * Action corrective*
 +
-Définissez le délai d'expiration de l'API ONTAPI sur une valeur supérieure à 60 secondes en définissant la variable d'environnement `ONTAPI_TIMEOUT_SEC`, Puis redémarrez SMI-S Provider.
+Définissez le délai d'expiration de l'appel de l'API ONTAP sur une valeur supérieure à 60 secondes en définissant la variable d'environnement `ONTAPI_TIMEOUT_SEC` , puis redémarrez SMI-S. Provider.
 
 

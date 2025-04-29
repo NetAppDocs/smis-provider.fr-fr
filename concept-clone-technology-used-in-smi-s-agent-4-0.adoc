@@ -17,4 +17,4 @@ SMI-S Provider crée des clones de LUN sur ce système de stockage en n'utilisan
 
 `FlexClone license is not enabled on the storage system.`
 
-Si des clones LUN ont été créés à l'aide de la technologie de clonage de LUN et que la version de Data ONTAP est ensuite mise à niveau vers la version 7.3.1 ou ultérieure, il n'est pas possible d'utiliser SMI-S Provider pour séparer ces clones. Ils doivent être gérés par l'administrateur du système de stockage.
+Si vous avez créé des clones de LUN à l'aide de la technologie de clonage de LUN et que la version de ONTAP est ensuite mise à niveau vers la version 7.3.1 ou ultérieure, vous ne pouvez pas utiliser SMI-S Provider pour séparer ces clones. Ils doivent être gérés par l'administrateur du système de stockage.

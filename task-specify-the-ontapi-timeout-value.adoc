@@ -1,17 +1,17 @@
 ---
 permalink: task-specify-the-ontapi-timeout-value.html 
 sidebar: sidebar 
-keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 300 sec 
-summary: 'Le fournisseur SMI-S appelle l"API ONTAP (ONTAPI) aux systèmes de stockage. Par défaut, le délai d"expiration de ONTAPI est de 300 secondes. Vous pouvez définir le délai d"attente sur une valeur comprise entre 60 et 300 secondes.' 
+keywords: smi-s provider, ontap api, calls, storage systems, default, 300 sec 
+summary: 'SMI-S Provider effectue des appels d"API ONTAP vers les systèmes de stockage. Par défaut, le délai d"appel de l"API ONTAP est de 300 secondes. Vous pouvez définir le délai d"attente sur une valeur comprise entre 60 et 300 secondes.' 
 ---
-= Spécifiez la valeur du délai d'expiration ONTAPI
+= Spécifiez la valeur du délai d'expiration de l'appel de l'API ONTAP
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Le fournisseur SMI-S appelle l'API ONTAP (ONTAPI) aux systèmes de stockage. Par défaut, le délai d'expiration de ONTAPI est de 300 secondes. Vous pouvez définir le délai d'attente sur une valeur comprise entre 60 et 300 secondes.
+SMI-S Provider effectue des appels d'API ONTAP vers les systèmes de stockage. Par défaut, le délai d'appel de l'API ONTAP est de 300 secondes. Vous pouvez définir le délai d'attente sur une valeur comprise entre 60 et 300 secondes.
 
 .Avant de commencer
 * Vous devez déjà disposer des informations d'identification de connexion en tant qu'administrateur.

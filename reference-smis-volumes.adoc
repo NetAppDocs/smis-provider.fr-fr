@@ -20,7 +20,7 @@ Le `smis volumes` la commande répertorie les volumes traditionnels et flexibles
 
 [NOTE]
 ====
-Pour clustered Data ONTAP, vous devez utiliser le `smis pools` au lieu de la commande `smis volumes` commande.
+Pour ONTAP, vous devez utiliser la `smis pools` commande au lieu de la `smis volumes` commande.
 
 ====
 .Emplacement

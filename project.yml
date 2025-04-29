@@ -20,13 +20,13 @@ sidebar:
     - title: Nouveautés de cette version
       url: "/reference-new-in-this-release-smis.html"
     - title: Utilisation du fournisseur NetApp SMI-S Provider
-      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+      url: "/reference-uses-of-ontap-smi-s-agent.html"
     - title: Performances et dimensionnement du fournisseur NetApp SMI-S
       url: "/reference-smi-s-agent-sizing-and-performance-information.html"
     - title: Composants du fournisseur NetApp SMI-S Provider
-      url: "/reference-data-ontap-smi-s-agent-components.html"
+      url: "/reference-ontap-smi-s-agent-components.html"
     - title: Protocoles du fournisseur NetApp SMI-S Provider
-      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+      url: "/reference-ontap-smi-s-agent-protocols.html"
     - title: Interaction du fournisseur SMI-S de NetApp avec un hôte
       url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
     - title: Profils SMI-S.
@@ -43,8 +43,8 @@ sidebar:
       url: "/reference-hardware-requirements.html"
     - title: Licences requises
       url: "/reference-required-licenses.html"
-    - title: Plateformes de cluster prises en charge
-      url: "/reference-supported-platforms.html"
+    - title: Prise en charge de NetApp SMI-S Provider pour les systèmes ONTAP
+      url: "/reference-smi-s-support-ontap-systems.html"
     - title: Téléchargez le pack logiciel NetApp SMI-S Provider
       url: "/task-download-smi-s-provider.html"
   - title: Installez NetApp SMI-S Provider
@@ -111,8 +111,8 @@ sidebar:
       url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
     - title: Spécifiez la valeur de durée de vie du travail concret
       url: "/task-specify-the-concrete-job-lifetime-value.html"
-    - title: Spécifiez la valeur du délai d'expiration ONTAPI
-      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: Spécifiez la valeur du délai d'expiration de l'appel de l'API ONTAP
+      url: "/task-specify-the-ontap-api-call-timeout-value.html"
     - title: Spécifiez le nombre maximal de threads par file d'attente de service
         de messages
       url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
@@ -247,4 +247,4 @@ sidebar:
         avec SMI-S Provider
       url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
   - title: Mentions légales
-    url: "/reference-legal-notices.html"
+    url: "/legal-notices.html"

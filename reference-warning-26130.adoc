@@ -28,9 +28,9 @@ Cette erreur se produit lorsque vous allouez de la capacité de stockage et que 
 
 . Sur chaque ordinateur hôte, ajoutez l'adresse IP de chaque système de stockage à l'application initiateur iSCSI.
 . Si nécessaire, sur chaque système de stockage, créez un groupe initiateur unique lié au nom de nœud iSCSI approprié à partir de la machine hôte correspondante.
-. Pour chaque ordinateur hôte connecté à Data ONTAP, ouvrez l'application MPIO et ajoutez l'ID matériel suivant :
+. Pour chaque machine hôte connectée à ONTAP, ouvrez l'application MPIO et ajoutez l'ID de matériel suivant :
 +
-** Si vous choisissez clustered Data ONTAP, entrez `*NETAPP LUN C-Mode*`.
+** Pour ONTAP, entrez `*NETAPP LUN C-Mode*`.
 
 
 . Redémarrez les ordinateurs hôtes.
