@@ -1,5 +1,5 @@
 ---
-permalink: reference-data-ontap-smi-s-agent-components.html 
+permalink: reference-ontap-smi-s-agent-components.html 
 sidebar: sidebar 
 keywords: smi-s provider 
 summary: Le fournisseur NetApp SMI-S comprend trois composants qui vous permettent de gérer et de surveiller les systèmes de stockage, à savoir CIMOM, objets fournisseurs et référentiel. 
