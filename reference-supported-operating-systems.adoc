@@ -12,6 +12,8 @@ summary: 'Avant d"installer SMI-S Provider, vous devez vérifier que l"hôte Win
 
 
 [role="lead"]
+Nous vous recommandons d'installer le fournisseur SMI-S sur sa propre machine virtuelle Windows dédiée (VM). Cette machine virtuelle peut se trouver sur le même domaine pour permettre une gestion sécurisée et pratique.
+
 Avant d'installer SMI-S Provider, vous devez vérifier que l'hôte Windows exécute un système d'exploitation pris en charge.
 
 [cols="3*"]
@@ -22,36 +24,23 @@ Avant d'installer SMI-S Provider, vous devez vérifier que l'hôte Windows exéc
  a| 
 Répertoires de base
  a| 
-* Microsoft Windows Server 2016
-* Microsoft Windows Server 2019
-* Microsoft Windows Server 2022
 * Microsoft Windows Server 2025
+* Microsoft Windows Server 2022
+* Microsoft Windows Server 2019
+* Microsoft Windows Server 2016
 
  a| 
-Les bibliothèques d'exécution Microsoft Visual C{pp} 2010 sont automatiquement installées lors de l'installation de SMI-S Provider. Pour éviter les problèmes potentiels liés aux bibliothèques d'exécution, vous devez installer Microsoft Visual C{pp} 2010 Redistributable Package (x86). à partir de l'emplacement suivant : http://www.microsoft.com[]
+Les bibliothèques d'exécution Microsoft Visual C++ 2010 sont automatiquement installées lors de l'installation du fournisseur SMI-S. Pour éviter d'éventuels problèmes liés aux bibliothèques d'exécution, vous devez installer le package redistribuable Microsoft Visual C++ 2010 (x86) à partir de l'emplacement suivant : http://www.microsoft.com[]
 
 |===
 
 
-== Configuration requise pour SCVMM UR 2.1
-
-System Center Virtual machine Manager (SCVMM) Update Rollup (UR) 2.1 est nécessaire pour gérer le serveur de fichiers NetApp avec NetApp SMI-S Provider 5.2.7 et versions ultérieures.
-
-Sans cet UR, SCVMM (version 2016, 2019, 2022 ou 2025) affiche la valeur des `Total Capacity` options et `Available Capacity` comme `*0 GB*` pour les partages de fichiers existants dans le serveur de fichiers NetApp.
+== Assurez-vous que la machine hôte du fournisseur réponde aux spécifications
 
 Pour exécuter SMI-S Provider, la machine hôte du fournisseur doit respecter les spécifications suivantes :
 
-* La machine hôte du fournisseur ne peut pas être utilisée pour héberger un nœud Hyper-V.
-* SCVMM ne doit pas être exécuté sur la machine hôte du fournisseur.
+* Le fournisseur ne peut pas être installé directement sur un nœud Hyper-V. Vous pouvez en revanche l'installer sur une machine virtuelle Hyper-V.
+* Le gestionnaire de machines virtuelles System Center (SCVMM) ne doit pas être exécuté sur la machine hôte du fournisseur.
 * La machine hôte du fournisseur ne doit pas exécuter d'autres programmes consommant beaucoup de mémoire.
 * La machine hôte du fournisseur ne doit pas exécuter de fournisseurs SMI-S provenant d'un autre fournisseur.
-
-
-Les hyperviseurs suivants sont pris en charge :
-
-* Microsoft Windows Server 2016 Hyper-V
-* VMware ESX 5.0
-* VMware ESX 5.1
-* VMware ESX 5.5
-* VMware ESX 6.0
 
