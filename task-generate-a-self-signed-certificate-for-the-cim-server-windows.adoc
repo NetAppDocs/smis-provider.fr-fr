@@ -11,11 +11,15 @@ summary: 'Par défaut, l"authentification SSL est activée pour le serveur CIM. 
 
 
 [role="lead"]
-Par défaut, l'authentification SSL est activée pour le serveur CIM. Lors de l'installation du SMI-S Provider, un certificat auto-signé pour le serveur CIM est installé dans le `pegasus` répertoire. Vous pouvez générer votre propre certificat auto-signé et l'utiliser plutôt que le certificat par défaut.
+L'authentification SSL est activée par défaut pour le serveur CIM. Lors de l'installation du fournisseur SMI-S, un certificat auto-signé pour le serveur CIM est installé dans le `pegasus` annuaire. Vous devez générer votre propre certificat auto-signé au lieu d'utiliser le certificat par défaut.
+
+
+CAUTION: Lorsque vous installez le fournisseur SMI-S, le certificat auto-signé par défaut installé est obsolète. En conséquence, la connexion SSL au fournisseur SMI-S échoue à partir de *Ajouter des périphériques de stockage* dans System Center Virtual Machine Manager (SCVMM). Vous devez générer un certificat auto-signé pour le serveur CIM et redémarrer ensuite le service SMI-S Provider. Pour plus d'informations, veuillez consulter link:https://kb.netapp.com/data-mgmt/SMI-S/SMI-S_Issues/CSMIS-3["Article de la base de connaissances NetApp : « CSMIS-3 : le certificat cimom.cert du NetApp SMI-S Provider 5.2.7 a expiré au moment de l’installation. »"^]
 
 .Avant de commencer
 * Vous devez déjà vous connecter en tant qu'administrateur.
 * Vous devez avoir déjà accédé à SMI-S Provider.
+* Vous devez avoir téléchargé et installé OpenSSL sur votre système Windows.
 
 
 .Étapes
@@ -63,6 +67,10 @@ La variable est définie lorsque vous ouvrez une nouvelle session d'invite de co
 Vous pouvez indiquer un nombre de jours différent pour lequel le certificat est valide.
 
 . Copiez le `cimom.key` et `cimom.cert` fichiers vers le `pegasus` Répertoire (Windows : `C:\Program Files (x86)\NetApp\smis\pegasus`).
+. Redémarrez le service du fournisseur SMI-S :
++
+`smis cimserver restart`
+
 
 
 
