@@ -558,7 +558,6 @@
   <block id="c79b9638e429df89a219f67e64877677" category="paragraph">NetApp SMI-S Provider est une interface de commande qui détecte et gère les plateformes qui exécutent le logiciel ONTAP. Le fournisseur SMI-S utilise les protocoles Web Enterprise Management (WBEM), qui vous permettent de gérer, de surveiller et de générer des rapports sur les éléments de stockage.</block>
   <block id="a316d32069744858b73bc2472339bb1d" category="paragraph">Le fournisseur SMI-S de NetApp suit les schémas standardisés par deux organisations :</block>
   <block id="ffb373b0246b03d37058c9917311f9ba" category="inline-link">Distributed Management Task Force (DMTF)</block>
-  <block id="3196a1e76b7eb51b7ff2baa784e99b4f" category="list-text"><block ref="3196a1e76b7eb51b7ff2baa784e99b4f" category="inline-link-rx"></block></block>
   <block id="b3973a38d43f2f1fe906a50cc9911f34" category="inline-link">Storage Networking Industry Association (SNIA)</block>
   <block id="6406ef7be2956ab22d718f61a164ac48" category="list-text"><block ref="6406ef7be2956ab22d718f61a164ac48" category="inline-link-rx"></block></block>
   <block id="6409b577d21cd98c3caae687888555d6" category="paragraph">Le fournisseur SMI-S remplace l'utilisation de plusieurs modèles, protocoles et transports d'objets gérés par un seul modèle orienté objet pour tous les composants d'un réseau de stockage.</block>
@@ -917,4 +916,5 @@
   <block id="e8dfaf98cdbd392a09efaa9768cab219" category="admonition">Lorsque vous installez le fournisseur SMI-S, le certificat auto-signé par défaut installé est obsolète. En conséquence, la connexion SSL au fournisseur SMI-S échoue à partir de *Ajouter des périphériques de stockage* dans System Center Virtual Machine Manager (SCVMM). Vous devez générer un certificat auto-signé pour le serveur CIM et redémarrer ensuite le service SMI-S Provider. Pour plus d'informations, veuillez consulter <block ref="6b2d7bc4026d64afffa89af6ebec1110" category="inline-link-macro-rx"></block></block>
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Vous devez avoir téléchargé et installé OpenSSL sur votre système Windows.</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">Redémarrez le service du fournisseur SMI-S :</block>
+  <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
 </blocks>

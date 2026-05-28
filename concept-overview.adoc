@@ -17,7 +17,7 @@ NetApp SMI-S Provider est une interface de commande qui détecte et gère les pl
 
 Le fournisseur SMI-S de NetApp suit les schémas standardisés par deux organisations :
 
-* http://www.dmtf.org/home["Distributed Management Task Force (DMTF)"^]
+* http://www.dmtf.org["Distributed Management Task Force (DMTF)"^]
 * http://www.snia.org/home["Storage Networking Industry Association (SNIA)"^]
 
 
