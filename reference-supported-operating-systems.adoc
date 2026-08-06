@@ -35,6 +35,7 @@ Les bibliothèques d'exécution Microsoft Visual C++ 2010 sont automatiquement i
 |===
 
 
+[[ensure-the-provider-host-machine-meets-the-specifications]]
 == Assurez-vous que la machine hôte du fournisseur réponde aux spécifications
 
 Pour exécuter SMI-S Provider, la machine hôte du fournisseur doit respecter les spécifications suivantes :

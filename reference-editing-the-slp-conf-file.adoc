@@ -21,6 +21,7 @@ Utilisateur avec un nom d'utilisateur et un mot de passe valides
 
 
 
+[[description]]
 == Description
 
 Le `slp.conf` Le fichier de configuration vous permet de modifier le nombre d'interfaces auxquelles un hôte écoute les requêtes SLP et le nombre d'adresses IP utilisées par un hôte pour la multidiffusion.

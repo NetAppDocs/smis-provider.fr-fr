@@ -75,6 +75,7 @@ Vous pouvez indiquer un nombre de jours différent pour lequel le certificat est
 
 
 
+[[result]]
 == Résultat
 
 La plage de dates du certificat commence à la date actuelle et s'exécute pendant le nombre de jours spécifié.
