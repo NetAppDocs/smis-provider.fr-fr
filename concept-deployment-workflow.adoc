@@ -13,4 +13,4 @@ summary: 'Avant de gérer et de surveiller vos systèmes de stockage à l"aide d
 [role="lead"]
 Avant de gérer et de surveiller vos systèmes de stockage à l'aide du SMI-S Provider, vous devez installer le logiciel SMI-S Provider et valider votre configuration préliminaire.
 
-image::../media/smi_s_provider_workflow.gif[flux de production du fournisseur smi s.]
+image::../media/smi_s_provider_workflow.gif[Un diagramme qui montre les flux de travail de déploiement du fournisseur SMI-S, de validation de la préconfiguration et de gestion]

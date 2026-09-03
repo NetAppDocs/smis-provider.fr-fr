@@ -15,4 +15,4 @@ Lorsqu'une application client sur un hôte découvre le serveur CIMOM en utilisa
 
 L'illustration suivante montre comment NetApp SMI-S Provider interagit avec un client de gestion WBEM lorsqu'un SMI-S Provider reçoit une requête ou une commande.
 
-image::../media/smi_s_agent_and_host_interaction.gif[interaction agent et hôte smi]
+image::../media/smi_s_agent_and_host_interaction.gif[Un diagramme illustrant un hôte envoyant des requêtes au fournisseur SMI-S Provider CIMOM, au référentiel, aux DLL du fournisseur et au système de stockage]

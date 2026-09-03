@@ -180,7 +180,6 @@
   <block id="155f23a4622d9e88b8c1a5c1526d3e64" category="paragraph"><block ref="d9ad9639917b14a2da8c6d384ef434df" prefix="" category="inline-code"></block></block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">Avant de gérer et de surveiller vos systèmes de stockage à l'aide du SMI-S Provider, vous devez installer le logiciel SMI-S Provider et valider votre configuration préliminaire.</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">Flux de travail de déploiement</block>
-  <block id="04c2ee750a71bee087a7164fa9418c8b" category="image-alt">flux de production du fournisseur smi s.</block>
   <block id="18ee0f99deeb67b9b7a6ef5a3679a09d" category="summary">Vous pouvez utiliser les options cimuser pour ajouter, supprimer, modifier et répertorier les utilisateurs du serveur CIM.</block>
   <block id="b07eb8a32f2cf3bb81c70d37e7d0aaba" category="doc">cimuser</block>
   <block id="5a70b73b0330c1b99f99d9417a0348a0" category="paragraph">Vous pouvez utiliser le<block ref="b07eb8a32f2cf3bb81c70d37e7d0aaba" prefix=" " category="inline-code"></block> Commande permettant d'ajouter, de supprimer, de modifier et de lister les utilisateurs du serveur CIM, ainsi que de gérer leurs mots de passe.</block>
@@ -818,7 +817,6 @@
   <block id="37735049e65188a885df4388c67153a4" category="summary">Lorsqu'une application client sur un hôte découvre le serveur CIMOM en utilisant SLP (codage CIM-XML via HTTP), le client interroge ensuite CIMOM pour rechercher des objets partagés (objets modélisés dans le langage CIM). Le CIMOM charge des objets partagés et interroge le système de stockage en utilisant des API spécifiques aux périphériques pour obtenir les informations demandées.</block>
   <block id="9016abb1e0944872fd232fd72ca5bc80" category="doc">Interaction du fournisseur SMI-S de NetApp avec un hôte</block>
   <block id="14f75c43461428b4df3f6d3980b25d02" category="paragraph">L'illustration suivante montre comment NetApp SMI-S Provider interagit avec un client de gestion WBEM lorsqu'un SMI-S Provider reçoit une requête ou une commande.</block>
-  <block id="707facb1331bad235d191a85d3686ab2" category="image-alt">interaction agent et hôte smi</block>
   <block id="c7e3ba666a2f84cc0cf01f10a8dd110d" category="summary">Le fournisseur NetApp SMI-S utilise l'encodage CIM-XML sur HTTPS et le protocole SLP (Service Location Protocol).</block>
   <block id="5f679677ad933bf6dbfb7a4ea7cbe348" category="doc">Protocoles du fournisseur NetApp SMI-S Provider</block>
   <block id="8c41eec09b97759e1f05ced5c48f938d" category="list-text">*Codage CIM-XML sur HTTPS*</block>
@@ -917,4 +915,6 @@
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Vous devez avoir téléchargé et installé OpenSSL sur votre système Windows.</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">Redémarrez le service du fournisseur SMI-S :</block>
   <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
+  <block id="f08445df01bad5aee6547cb7953d07d6" category="image-alt">Un diagramme qui montre les flux de travail de déploiement du fournisseur SMI-S, de validation de la préconfiguration et de gestion</block>
+  <block id="459eb66f775af707f84ca3f4c3f5f129" category="image-alt">Un diagramme illustrant un hôte envoyant des requêtes au fournisseur SMI-S Provider CIMOM, au référentiel, aux DLL du fournisseur et au système de stockage</block>
 </blocks>
