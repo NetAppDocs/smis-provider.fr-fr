@@ -10,6 +10,9 @@ summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Si vous utilisez un pare-feu autre que le pare-feu Windows par défaut, NetApp SMI-S Provider pourrait ne pas être en mesure de communiquer avec les clients ou d'envoyer des indications, sauf si les ports requis sont ajoutés comme exceptions. Ajoutez ces ports à la configuration de votre pare-feu pour résoudre le problème.
+
 * *Numéro*
 +
 Si vous utilisez un pare-feu autre que le pare-feu Windows par défaut, vous pouvez rencontrer les problèmes suivants :

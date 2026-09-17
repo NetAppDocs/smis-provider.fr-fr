@@ -10,6 +10,9 @@ summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+L'avertissement 26130 s'affiche lorsqu'une capacité de stockage est allouée à un groupe d'hôtes dont aucun hôte n'a accès à la baie de stockage, ce qui vous empêche de placer des machines virtuelles sur le système de stockage. Accordez les autorisations nécessaires à chaque hôte pour résoudre cet avertissement.
+
 
 
 [[message]]

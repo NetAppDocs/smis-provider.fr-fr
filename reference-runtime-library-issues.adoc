@@ -11,6 +11,9 @@ summary: Problèmes rencontrés avec le fournisseur NetApp SMI-S Provider.
 :pp: &#43;&#43;
 
 
+[role="lead"]
+NetApp SMI-S Provider peut rencontrer des problèmes de bibliothèque d'exécution sous Windows. Installez le package redistribuable Microsoft Visual C{pp} requis pour les résoudre.
+
 * *Numéro*
 +
 Vous rencontrez des problèmes de bibliothèque d'exécution.
